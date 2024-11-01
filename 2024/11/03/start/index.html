@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>标签:主题-Quiet</title>
+<title>测试-Quiet</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="/css/index.css">
 
 
-<meta name="keywords" content="hexo主题,hexo扁平化主题,Quiet主题">
-<meta name="description" content="描述">
+
+<meta name="keywords" content="测试,">
+<meta name="description" content="采用简约大方的扁平化Hexo-Quiet主题">
 
 
 <script src="/js/jquery.min.js"></script>
@@ -38,12 +39,11 @@
 
 	<body>
 		
-
 	<div class="header">
 		<div class="header-top" id="header-top">
 			<div class="h-left">
 				<a href="/">
-					<img src="/image/logo.png" alt="Quiet">
+					<img src="/image/head.png" alt="Quiet">
 				</a>
 			</div>
 			<div class="h-right">
@@ -77,13 +77,13 @@
 								
 									
 						
-							<li class="select">
-								<a href="/tags">
-									TAGS
-								</a>
-								<span class="dot"></span>
-							</li>
-							
+								<li>
+									<a href="/tags">
+										TAGS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -276,38 +276,119 @@
 
 </script>
 
+<div class="post">
+    <div class="post-header-background post-header-color"
+    style="background: url('')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/测试">测试</a></li>
+            
+            
+        </ul>
 
-
-
-<div class="tag">
-    <div class="header-body-background">
-    <div class="header-body-background-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgtags.svg" alt="Quiet">
-        </span>
-
-        <h2>文章标签：主题</h2>
-    </div>
-</div>
-    <div class="tag-content" id="content">
-        <div class="tag-content-data">
-            <div class="grouping">
-    
-        <p>
-            2020
-        </p>
-        
-        <a href="/2020/11/03/start/">
-            <span>一个简约扁平化的Hexo静态主题博客-Quiet</span>
-            <time>11-03</time>
-        </a>
-        
-        
-</div>
+        <h1>测试</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g>
+                            <path fill="#12183A"
+                                d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                            </path>
+                        </g>
+                    </svg>
+                
+                <span class="post-header-info-author-text"> <a href="../../about">Annie</a></span>
+                <div class="post-header-info-author-categories">
+                    <div class="post-header-info-author-categories">   <a href="/category/%E6%B5%8B%E8%AF%95/"target="_blank"> 测试 </a>   </div>
+                </div>
+                <p>2024-11-03 20:33:36</p>
+            </div>
         </div>
     </div>
 </div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
 
+    <p>你好呀</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">&#123;% img [class names] /path/to/image [width] [height] <span class="hljs-string">&#x27;&quot;title text&quot; &quot;alt text&quot;&#x27;</span> %&#125;<br></code></pre></td></tr></table></figure>
+
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/2024/11/01/hello-world/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>第一篇</p>
+        </div>
+    </a>
+    
+</div>
+</div>
 		
 <div class="footer">
 	<div class="Copyright">
@@ -411,7 +492,7 @@
             distractionFreeMode:false
         })
         
-        if(Boolean('')){
+        if(Boolean('false')){
             gitalk.render('gitalk-container')
         }
     </script>
